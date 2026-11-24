@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "GarrafaYa",
+    "slug": "garrafaya",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "garrafaya",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F8FAFC"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "GarrafaYa usa tu ubicación para compartir la ubicación del camión y registrar avistamientos."
+      }
+    },
+    "android": {
+      "package": "com.garrafaya.bolivia",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite a GarrafaYa actualizar y compartir ubicaciones de camiones."
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
